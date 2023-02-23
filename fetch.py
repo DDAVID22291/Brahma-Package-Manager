@@ -1,4 +1,5 @@
 from hashlib import sha256
+from shutil import unpack_archive
 import sys
 import requests
 
@@ -18,4 +19,10 @@ def http_download(url, expected_hash=None):
         output_file.write(response.content)
 
 
+# Download file with git protocol
+# Library candidate to use: GitPython
 # def git_download(url):
+
+
+def extract(archive):
+    unpack_archive(archive)
