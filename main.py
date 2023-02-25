@@ -1,6 +1,6 @@
 import sys
-import parse
-import fetch
+from src import *
+
 
 if __name__ == "__main__":
     # Program should be run with a config file as argument
