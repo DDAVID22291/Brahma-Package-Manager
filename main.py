@@ -1,16 +1,16 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import sys
+from src import *
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+if __name__ == "__main__":
+    # Program should be run with a config file as argument
+    if len(sys.argv) != 2:
+        print("Usage: python", sys.argv[0], "[FILE]")
+        sys.exit("Error: incorrect usage")
 
+    # config_file = open(sys.argv[1], "r")
+    # config = parse.parse_config(config_file)
+    # config_file.close()
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # source = config["package"]["definition"]["source"]
+    # fetch.http_download(source["http-get"], source["hash"])
